@@ -4,7 +4,7 @@ This repository contains a Python-based automation project for efficiently manag
 
 ## Features
 
-### `s3.py`
+### `s3_backup.py`
 - Automates the process of uploading local backups to an AWS S3 bucket.
 - Ensures reliable and efficient storage of backups in the cloud.
 
@@ -24,7 +24,7 @@ This repository contains a Python-based automation project for efficiently manag
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/python-backup-automation.git
+   git clone https://github.com/Vaishnavi639/python-backup-automation.git
    cd python-backup-automation
    ```
 2. Install the required Python packages:
@@ -48,17 +48,17 @@ This script creates a local backup of files.
    ```
 3. The script will create a compressed backup file in the destination directory with the naming format `backup_<YYYY-MM-DD>.tar.gz`.
 
-### Running `s3.py`
+### Running `s3_backup.py`
 This script uploads local backups to an AWS S3 bucket.
 
-1. Open `s3.py` and configure the necessary variables:
+1. Open `s3_backup.py` and configure the necessary variables:
    ```python
    bucket_name = "<your-s3-bucket-name>"
    local_file_path = "<path-to-local-backup-file>"
    ```
 2. Run the script:
    ```bash
-   python s3.py
+   python s3_backup.py
    ```
 3. The script will upload the specified backup file to the configured S3 bucket.
 
@@ -68,26 +68,17 @@ This script uploads local backups to an AWS S3 bucket.
    ```bash
    python backup.py
    ```
-2. Upload the generated backup file to AWS S3 using `s3.py`:
+2. Upload the generated backup file to AWS S3 using `s3_backup.py`:
    ```bash
-   python s3.py
+   python s3_backup.py
    ```
 
 ## File Structure
 ```
 python-backup-automation/
 ├── backup.py        # Script for creating local backups
-├── s3.py            # Script for uploading backups to AWS S3
+├── s3_backup.py            # Script for uploading backups to AWS S3
 └── README.md        # Documentation
-```
-
-## Contributing
-
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
